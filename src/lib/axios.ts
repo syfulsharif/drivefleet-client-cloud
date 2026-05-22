@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BYPASS_TOKEN = 'qahAdRIAEUf1NshZIcoIbC0SLdCpR36Y';
-const baseURL = import.meta.env.VITE_API_BASE_URL || 'https://drivefleet-backend-vercel-6cn38h87h-syfulsharifs-projects.vercel.app';
+const baseURL = import.meta.env.VITE_API_BASE_URL || 'https://drivefleet-backend-vercel-fwnmo4jfx-syfulsharifs-projects.vercel.app';
 
 export const api = axios.create({
   baseURL: `${baseURL}/api`,
