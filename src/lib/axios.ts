@@ -8,7 +8,12 @@ export const api = axios.create({
   withCredentials: true,
   headers: {
     'Content-Type': 'application/json',
-    'x-vercel-protection-bypass': BYPASS_TOKEN,
-    'x-vercel-set-bypass-cookie': 'true',
   },
+});
+
+// Add bypass token to all requests
+api.interceptors.request.use((config) => {
+  const separator = config.url?.includes('?') ? '&' : '?';
+  config.url = `${config.url}${separator}x-vercel-protection-bypass=${BYPASS_TOKEN}`;
+  return config;
 });
