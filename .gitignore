@@ -7,11 +7,10 @@ yarn.lock
 dist/
 dist-ssr/
 
-# Environment variables
+# Environment variables (except production)
 .env
 .env.local
 .env.*.local
-.env.production
 .env.production.local
 
 # IDE
