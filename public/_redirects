@@ -1,4 +1,0 @@
-# Cloudflare Pages SPA Configuration
-# All routes fallback to index.html for SPA routing
-
-/*  /index.html  200
